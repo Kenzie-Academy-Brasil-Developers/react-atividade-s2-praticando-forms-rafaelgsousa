@@ -17,9 +17,7 @@ function Home({setDados}){
         confemail:yup.string().required("Item obrigatorio").oneOf([yup.ref("email")],"E-mail incorreto"),
         age:yup.number().required("Item obrigatorio"),
         // eslint-disable-next-line no-useless-escape
-        password:yup.string().required("Item obrigatório")
-        .matches(/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%*()_+^&}{:;?.])(?:([0-9a-zA-Z])(?!\1)|[!@#$%;*(){}_+^&]){6,}$/,
-        "A senha deve ter pelo menos uma letra maiúscula, uma minuscula, um numero e o carácter especial"),
+        password:yup.string().required("Item obrigatório"),
         confpassword:yup.string().required("Item obrigatório").oneOf([yup.ref("password")],"senha incorreta")
     })
 
