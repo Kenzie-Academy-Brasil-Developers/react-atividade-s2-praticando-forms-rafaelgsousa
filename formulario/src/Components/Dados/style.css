@@ -1,3 +1,10 @@
+@keyframes descer {
+    from {top:-800px};
+    50%{top:-200px}
+    to {top:0px}
+}
+
+
 .card {
     color:black;
     background-color: white;
@@ -5,12 +12,21 @@
     border:2px solid darkblue;
     margin: 10px;
     padding: 10px;
+    position: relative;
+    animation-name: descer;
+    animation-duration: 1.5s;
 }
 .none {
     display: none;
 }
-.card a {
+.button a {
     text-decoration: none;
     color: black;
     height: 20px;
+}
+.button {
+    padding: 5px 10px;
+}
+.button:hover {
+    background-color: rgb(235, 233, 230);
 }

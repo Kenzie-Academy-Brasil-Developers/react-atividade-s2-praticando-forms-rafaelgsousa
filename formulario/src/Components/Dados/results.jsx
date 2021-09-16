@@ -10,7 +10,7 @@ function Results({dados}){
             <h3>Email: {dados.email}</h3>
             <h3>Idade: {dados.age}</h3>
             <h3>Senha: {dados.password}</h3>
-            <button><Link to="/">Ir para formulário</Link></button>
+            <button className="button"><Link to="/">Ir para formulário</Link></button>
         </div>
     )
 }

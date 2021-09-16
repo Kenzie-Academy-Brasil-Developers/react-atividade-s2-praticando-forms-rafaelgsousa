@@ -1,0 +1,8 @@
+.formulario button {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    border: 1px solid black;
+}
